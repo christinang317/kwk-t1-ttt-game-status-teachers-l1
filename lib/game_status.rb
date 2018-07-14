@@ -48,3 +48,10 @@ end
 def over?(board)
   won?(board) || draw?(board)
 end
+
+def winner(board)
+  if won?(board)
+    return board[won?(board)[0]]
+  end
+nil
+end 
