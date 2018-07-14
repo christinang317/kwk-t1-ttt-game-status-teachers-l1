@@ -35,7 +35,7 @@ end
 def full?(board)
   board.each do |cell|
     if cell == "" || cell == " "
-       false
+       return false
     end
   end
   true
