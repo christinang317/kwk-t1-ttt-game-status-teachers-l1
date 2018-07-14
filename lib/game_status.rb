@@ -33,10 +33,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |cell|
-    if cell == ""|| cell == " "
-      false
+  board.each do |box|
+    if box == "" || box == " "
+     return false
     end
   end
-  true
-end
+  true 
++end
