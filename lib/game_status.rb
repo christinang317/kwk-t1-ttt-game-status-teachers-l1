@@ -33,10 +33,11 @@ def won?(board)
 end
 
 def full?(board)
-  board.detect do |index|
-    if board[index] != "X" || board[index] != "O"
+  board.each do |cell|
+    if cell == ""|| cell == " "
       false
     end
+  end
   true
-end
+
 end
